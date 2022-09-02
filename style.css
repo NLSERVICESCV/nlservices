@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: darkred;
+}
+
+nav{ 
+    
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+ }
+
+ nav .logo a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+ }
+
+ nav  ul{ 
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+ }
+nav li{ 
+    margin-left: 7px;
+}
+nav li a, .mobile-menu li a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+nav li a:hover{ 
+    background-color: white;
+    color:black;
+}
+
+/* kel-li */
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner{ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+}
+
+
+/* kel-li */
+.banner ul{
+    margin: 0 auto;
+    display: table;
+    text-align: left;
+}
+
+
+.texto-sobre { 
+    margin-top: 100px;
+}
+
+.texto-sobre h1{ 
+    font-size: 50px;
+    color: white;
+    margin: 50px;
+}
+
+.texto-sobre h2{
+    font-size: 20px;
+    color: white;
+ } 
+
+
+.texto-sobre p{ 
+    margin: 60px 0;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.texto .titulo  { 
+    font-size: 50px;
+    color: white;
+    margin: 50px;
+}
+
+.texto .sub_titulo{ 
+    font-size: 35px;
+    color:white;
+    margin: 50px;
+}
+
+.center .texto .titulo h1 { 
+    font-size: 50px;
+    color:white;
+    margin: 50px;
+}
+
+.texto .botoes{ 
+    margin-top: 30px;
+}
+
+.texto .botoes button{ 
+     height: 55px;
+     width: 170px;
+     border-radius: 5px;
+     border: 0;
+     margin: 0 10px;
+     font-size: 20px;
+     font-weight: 500;
+     padding: 0 10px;
+     cursor: pointer;
+     outline: none;
+     transition: 0.3s;
+     
+}
+.texto .botoes button.n-overlay{ 
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+.texto .botoes button.n-overlay:hover{ 
+    color: black;
+    background-color: white;
+}
+
+.texto-sobre li{ 
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  
+} 
+
+.texto p{
+    margin: 40px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
