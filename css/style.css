@@ -7,10 +7,11 @@
  }
  
 header{
-    position: fixed;
+   /* position: fixed;*/
     top: 0px;
     width: 100%;
     background-color: darkred;
+    margin-bottom: 5px;
 }
 
 nav{ 

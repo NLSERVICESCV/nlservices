@@ -8,3 +8,13 @@ function menuShow() {
         document.querySelector('.icon').src = "img/close_white_36dp.svg";
     }
 }
+
+window.onload  = () => {
+    const header = document.querySelector('header')
+    
+    window.addEventListener('scroll', e => {
+        let scroll = window.scrollY
+        header.style = `position: ${scroll > 0 ? 'fixed':'relative'}`
+    })
+}
+
