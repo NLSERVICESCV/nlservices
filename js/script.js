@@ -13,7 +13,7 @@ window.onload  = () => {
     const header = document.querySelector('header')
     const filename = window.location.pathname.split('/').pop();// dirty solution
     if(filename == 'index.html'){
-        header.css = 'position: fixed';
+        header.style = 'position: fixed';
         return
     }
     
