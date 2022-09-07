@@ -58,7 +58,7 @@ nav li a:hover{
 body{
     height: 100%;
     width: 100%;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('../img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
