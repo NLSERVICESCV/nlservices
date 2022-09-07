@@ -11,10 +11,9 @@ function menuShow() {
 
 window.onload  = () => {
     const header = document.querySelector('header')
-    
     window.addEventListener('scroll', e => {
         let scroll = window.scrollY
-        header.style = `position: ${scroll > 0 ? 'fixed':'relative'}`
+        header.style = `position: ${scroll > 8 ? 'fixed':'relative'}`
     })
 }
 
