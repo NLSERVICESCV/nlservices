@@ -11,6 +11,12 @@ function menuShow() {
 
 window.onload  = () => {
     const header = document.querySelector('header')
+    const filename = window.location.pathname.split('/').pop();// dirty solution
+    if(filename == 'index.html'){
+        header.css = 'position: fixed';
+        return
+    }
+    
     window.addEventListener('scroll', e => {
         let scroll = window.scrollY
         header.style = `position: ${scroll > 8 ? 'fixed':'relative'}`
