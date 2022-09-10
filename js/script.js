@@ -9,17 +9,21 @@ function menuShow() {
     }
 }
 
-window.onload  = () => {
+window.addEventListener('load', () => {
+    const ERROR = 8
     const header = document.querySelector('header')
-    const filename = window.location.pathname.split('/').pop();// dirty solution
-    if(filename == 'index.html'){
+    const gap = document.body.scrollHeight - window.innerHeight
+    console.table({ gap, sh: header.scrollHeight })
+
+    if (gap <= header.scrollHeight + ERROR)
         header.style = 'position: fixed';
-        return
+    else {
+
+        window.addEventListener('scroll', () => {
+            let scroll = window.scrollY
+            header.style = `position: ${scroll > ERROR ? 'fixed' : 'relative'}`
+        })
     }
-    
-    window.addEventListener('scroll', e => {
-        let scroll = window.scrollY
-        header.style = `position: ${scroll > 8 ? 'fixed':'relative'}`
-    })
-}
+
+})
 
