@@ -9,17 +9,20 @@ function menuShow() {
     }
 }
 
-window.onload  = () => {
+window.addEventListener('load', () => {
+    const ERROR = 8
     const header = document.querySelector('header')
-    const filename = window.location.pathname.split('/').pop();// dirty solution
-    if(filename == 'index.html'){
-        header.style = 'position: fixed';
-        return
-    }
-    
-    window.addEventListener('scroll', e => {
-        let scroll = window.scrollY
-        header.style = `position: ${scroll > 8 ? 'fixed':'relative'}`
-    })
-}
+    const gap = document.body.scrollHeight - window.innerHeight
+    console.table({ gap, sh: header.scrollHeight })
 
+    if (gap <= header.scrollHeight + ERROR)
+        header.style = 'position: fixed';
+    else {
+
+        window.addEventListener('scroll', () => {
+            let scroll = window.scrollY
+            header.style = `position: ${scroll > ERROR ? 'fixed' : 'relative'}`
+        })
+    }
+
+})
