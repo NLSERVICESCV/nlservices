@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
  }
+
+.info{
+    text-align: justify; 
+    text-justify: inter-word; 
+    padding: 10px;
+}
  
 header{
     position: sticky;
@@ -67,11 +73,17 @@ body{
 }
 
 .banner{ 
+    /*
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center ;
     text-align: center;
+    */
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 10% 0 10% 0;
 }
 
 
@@ -207,5 +219,8 @@ body{
 
     .open {
         display: block;
+    }
+    .info{
+        text-align: left;
     }
 }
