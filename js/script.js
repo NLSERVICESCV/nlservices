@@ -9,6 +9,7 @@ function menuShow() {
     }
 }
 
+/*
 window.addEventListener('load', () => {
     const ERROR = 8
     const header = document.querySelector('header')
@@ -26,3 +27,4 @@ window.addEventListener('load', () => {
     }
 
 })
+*/
