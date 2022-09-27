@@ -73,17 +73,17 @@ body{
 }
 
 .banner{ 
-    /*
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center ;
     text-align: center;
-    */
+    /*
     display: grid;
     place-items: center;
     text-align: center;
     margin: 10% 0 10% 0;
+    */
 }
 
 
