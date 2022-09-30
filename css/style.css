@@ -2,12 +2,22 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     font-family: 'Poppins', sans-serif;
  }
+
+.info{
+    text-align: justify; 
+    text-justify: inter-word; 
+    padding: 10px;
+}
  
+main{
+    padding: 100px 10px 100px 10px;
+}
+
 header{
-   /* position: fixed;*/
+    position: fixed;
     top: 0px;
     width: 100%;
     background-color: darkred;
@@ -208,4 +218,8 @@ body{
     .open {
         display: block;
     }
+    .info{
+        text-align: left;
+    }
+   
 }
